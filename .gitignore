@@ -11,3 +11,5 @@ submission/output/
 
 # Model weights
 models/*.pt
+
+HWF-latex-temp/
