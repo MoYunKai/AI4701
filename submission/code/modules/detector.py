@@ -524,6 +524,8 @@ class YOLODetector:
                 confidence=float(conf),
                 crop=crop,
                 track_id=int(tid),
+                class_id=int(cid),
+                class_name=cls_name,
             ))
 
         logger.debug(
@@ -590,6 +592,8 @@ class YOLODetector:
                     confidence=conf,
                     crop=crop,
                     track_id=-1,  # SAHI 不支持跟踪
+                    class_id=-1,
+                    class_name=class_name,
                 ))
 
             logger.debug(
